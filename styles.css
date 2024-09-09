@@ -1,72 +1,65 @@
-* {
-    box-sizing: border-box;
-}
-
+/* Styles de base pour le site */
 body {
+    font-family: Arial, sans-serif; /* Police par défaut pour tout le texte */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Couleur de fond de la page */
+    color: #333; /* Couleur du texte principal */
 }
 
 header {
-    background-color: #b22234; /* Rouge UniLaSalle */
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    position: relative; /* Pour positionner les boutons de navigation */
+    text-align: center; /* Centre le contenu de l'en-tête */
+    background-color: #fff; /* Fond blanc pour l'en-tête */
+    padding: 20px 0; /* Espacement vertical de l'en-tête */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre sous l'en-tête */
 }
 
+/* Style pour le logo UniLaSalle */
 .logo {
-    width: 200px; /* Ajuste la taille du logo selon tes besoins */
-    height: auto;
-    margin-bottom: 10px; /* Espacement entre le logo et le titre */
+    width: 200px; /* Largeur du logo */
+    height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions */
 }
 
+/* Style pour le titre principal */
 h1 {
-    margin: 0;
-    font-size: 2.5em;
+    color: #e63946; /* Couleur rouge pour le titre principal */
+    font-size: 36px; /* Taille du titre */
+    margin-bottom: 20px; /* Espace sous le titre */
 }
 
+/* Style pour le menu de navigation */
 .nav {
-    position: absolute;
-    right: 20px; /* Espacement à droite */
-    top: 20px; /* Espacement du haut */
+    display: flex; /* Affiche les éléments du menu en ligne */
+    justify-content: center; /* Centre le menu horizontalement */
+    gap: 15px; /* Espacement entre les éléments du menu */
 }
 
+/* Style des boutons de navigation */
 .nav-button {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px; /* Espacement entre les boutons */
-    font-size: 1em;
+    color: #fff; /* Couleur du texte des boutons (blanc) */
+    background-color: #e63946; /* Couleur de fond des boutons (rouge) */
+    padding: 10px 20px; /* Espacement interne des boutons */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    border-radius: 5px; /* Coins arrondis pour les boutons */
+    transition: background-color 0.3s; /* Effet de transition pour la couleur de fond au survol */
 }
 
+/* Couleur au survol des boutons */
 .nav-button:hover {
-    text-decoration: underline; /* Soulignement au survol */
+    background-color: #d62839; /* Couleur plus foncée au survol */
 }
 
+/* Style pour la section principale (conteneur) */
 .container {
-    text-align: center;
-    margin-top: 20px;
+    max-width: 1200px; /* Largeur maximale du contenu */
+    margin: 20px auto; /* Centre le conteneur */
+    padding: 20px; /* Espacement interne */
 }
 
-.nas-button {
-    background-color: #b22234; /* Rouge UniLaSalle */
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.nas-button:hover {
-    background-color: #a0002d; /* Couleur rouge plus foncée au survol */
+/* Style pour les images */
+.machine-image {
+    max-width: 100%; /* Image responsive, occupe toute la largeur disponible */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    display: block; /* S'assure que l'image soit affichée en bloc */
+    margin: 20px auto; /* Centre l'image horizontalement */
 }
