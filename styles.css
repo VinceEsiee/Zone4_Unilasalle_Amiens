@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #b22234; /* Rouge UniLaSalle */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Pour positionner les boutons de navigation */
+}
+
+.logo {
+    width: 200px; /* Ajuste la taille du logo selon tes besoins */
+    height: auto;
+    margin-bottom: 10px; /* Espacement entre le logo et le titre */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.nav {
+    position: absolute;
+    right: 20px; /* Espacement à droite */
+    top: 20px; /* Espacement du haut */
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px; /* Espacement entre les boutons */
+    font-size: 1em;
+}
+
+.nav-button:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nas-button {
+    background-color: #b22234; /* Rouge UniLaSalle */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nas-button:hover {
+    background-color: #a0002d; /* Couleur rouge plus foncée au survol */
+}
