@@ -53,12 +53,13 @@ h1 {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
+    text-align: center; /* Centre tout le contenu à l'intérieur */
 }
 
 /* Style pour les images */
 .machine-image {
-    max-width: 100%;
+    max-width: 100%; /* Image responsive */
     height: auto;
     display: block;
-    margin: 20px auto; /* Centre l'image horizontalement */
+    margin: 0 auto 20px auto; /* Centre l'image horizontalement et ajoute un espace en bas */
 }
