@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style pour les boutons en forme de rectangles arrondis */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            background-color: #f44336; /* Rouge */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            width: 200px;
+        }
+
+        /* Disposition en deux colonnes pour les boutons */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <!-- Logo UniLaSalle au centre -->
         <img src="https://www.unilasalle-amiens.fr/wp-content/themes/unilasalle-amiens/images/unilasalle_amiens_logo.svg" alt="Logo UniLaSalle Amiens" class="logo">
 
-        <!-- Menu de navigation avec le bouton Contact ajouté -->
+        <!-- Menu de navigation -->
         <nav class="nav">
             <a href="index.html" class="nav-button">Accueil</a>
             <a href="https://www.unilasalle-amiens.fr/" class="nav-button">École</a>
@@ -22,28 +51,29 @@
 
     <div class="container">
         <!-- Titre principal -->
-        <h1>Bienvenue sur le serveur WEB Zone 4</h1>
+        <h1 style="text-align: center;">Bienvenue sur le serveur WEB Zone 4</h1>
         
         <!-- Bouton pour accéder au serveur NAS -->
         <div style="text-align: center; margin: 50px 0;">
             <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252F" class="button">Accéder au Serveur WEB Zone 4</a>
         </div>
-        
-        <!-- Tableau des documents -->
-        <table class="doc-table">
-            <tr>
-                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FDocuments%2520techniques%252F" class="table-button">Documents Techniques</a></td>
-                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FProgramme%2520API%252F" class="table-button">Programme API</a></td>
-            </tr>
-            <tr>
-                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520Electriques%252F" class="table-button">Schéma Électriques</a></td>
-                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520M%C3%A9caniques%252F" class="table-button">Schéma Mécaniques</a></td>
-            </tr>
-            <tr>
-                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%C3%A9e%252FGroupes%252FZ4%252FPlans%2520Pneumatiques%252F" class="table-button">Schéma Pneumatiques</a></td>
-                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%C3%A9e%252FGroupes%252FZ4%252FProgramme%2520IHM%252F" class="table-button">Programme IHM</a></td>
-            </tr>
-        </table>
+
+        <!-- Conteneur pour les boutons organisés en deux colonnes -->
+        <div class="button-container">
+            <!-- Colonne de gauche -->
+            <div class="column">
+                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FDocuments%2520techniques%252F" class="button">Documents Techniques</a>
+                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FProgramme%2520API%252F" class="button">Programme API</a>
+                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520Electriques%252F" class="button">Schéma Électriques</a>
+            </div>
+
+            <!-- Colonne de droite -->
+            <div class="column">
+                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520M%C3%A9caniques%252F" class="button">Schéma Mécaniques</a>
+                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520Pneumatiques%252F" class="button">Schéma Pneumatiques</a>
+                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%C3%A9e%252FGroupes%252FZ4%252FProgramme%2520IHM%252F" class="button">Programme IHM</a>
+            </div>
+        </div>
     </div>
 
     <!-- Zone pour les scripts éventuels -->
