@@ -101,3 +101,20 @@ h1 {
 .large-button:hover {
     background-color: #d62839; /* Couleur au survol */
 }
+
+/* Style pour le titre de la page de contact */
+.contact-title {
+    text-align: center;
+    font-weight: bold;
+    color: #e63946; /* Couleur cohérente avec le thème */
+    font-size: 36px;
+    margin-bottom: 20px; /* Espace en bas du titre */
+}
+
+/* Style pour les informations de contact */
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px; /* Taille de police confortable */
+    color: #333; /* Couleur du texte */
+}
