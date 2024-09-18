@@ -63,3 +63,41 @@ h1 {
     display: block;
     margin: 0 auto 20px auto; /* Centre l'image horizontalement et ajoute un espace en bas */
 }
+
+/* Styles pour les boutons */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px 0; /* Espace vertical entre les boutons */
+    background-color: #f44336; /* Rouge */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    width: 200px;
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+.button:hover {
+    background-color: #d62839; /* Couleur au survol */
+}
+
+.large-button {
+    display: block;
+    width: 100%;
+    max-width: 800px; /* Largeur maximale ajustable */
+    padding: 20px 0;
+    margin: 20px auto;
+    font-size: 24px; /* Texte plus grand */
+    text-align: center;
+    background-color: #f44336;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+.large-button:hover {
+    background-color: #d62839; /* Couleur au survol */
+}
