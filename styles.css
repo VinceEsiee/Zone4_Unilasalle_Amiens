@@ -31,7 +31,7 @@ h1 {
 .nav {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Augmenté l'espace entre les boutons */
+    gap: 20px; /* Espace entre les boutons */
 }
 
 /* Style des boutons de navigation */
@@ -42,7 +42,6 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    margin: 0 10px; /* Espace horizontal à gauche et à droite des boutons */
 }
 
 .nav-button:hover {
@@ -68,8 +67,8 @@ h1 {
 /* Styles pour les boutons */
 .button {
     display: inline-block;
-    padding: 30px 30px;
-    margin: 20px 20; /* Espace vertical de 10 pixels entre les boutons */
+    padding: 15px 60px;
+    margin: 10px 0; /* Espace vertical de 10 pixels entre les boutons */
     background-color: #f44336; /* Rouge */
     color: white;
     text-align: center;
