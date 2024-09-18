@@ -1,115 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Déclaration du jeu de caractères et des paramètres de mise en page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titre affiché dans l'onglet du navigateur -->
-    <title>Serveur WEB Zone4</title>
-    <!-- Lien vers le fichier CSS pour les styles -->
+    <title>Accueil</title>
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Styles spécifiques à cette page (pour le tableau et les boutons) -->
-    <style>
-        /* Styles pour le tableau au milieu de la page */
-        table {
-            width: 80%; /* Largeur du tableau (80% de la largeur de la page) */
-            margin: 20px auto; /* Centre le tableau horizontalement */
-            border-collapse: collapse; /* Supprime les espaces entre les cellules du tableau */
-        }
-        th, td {
-            border: 1px solid #ccc; /* Ajoute une bordure autour des cellules */
-            padding: 15px; /* Espace interne autour du texte dans les cellules */
-            text-align: center; /* Centre le texte à l'intérieur des cellules */
-        }
-        th {
-            background-color: #f2f2f2; /* Couleur de fond des en-têtes de colonnes */
-        }
-        a {
-            text-decoration: none; /* Supprime le soulignement des liens */
-            color: #e63946; /* Couleur des liens (rouge) */
-        }
-        a:hover {
-            text-decoration: underline; /* Souligne le lien lorsque la souris passe dessus */
-        }
-        .main-button {
-            display: block; /* Affiche le bouton en bloc pour qu'il occupe toute la largeur disponible */
-            margin: 20px auto; /* Centre le bouton horizontalement */
-            padding: 15px 30px; /* Espacement interne du bouton (haut/bas, gauche/droite) */
-            background-color: #e63946; /* Couleur de fond du bouton */
-            color: white; /* Couleur du texte du bouton */
-            text-align: center; /* Centre le texte du bouton */
-            border: none; /* Supprime la bordure du bouton */
-            border-radius: 5px; /* Coins arrondis du bouton */
-            font-size: 18px; /* Taille de la police du bouton */
-        }
-        .main-button:hover {
-            background-color: #d62839; /* Change la couleur de fond lorsque la souris passe dessus */
-        }
-    </style>
 </head>
 <body>
     <header>
-        <!-- Logo de l'école en haut de la page -->
+        <!-- Logo UniLaSalle au centre -->
         <img src="https://www.unilasalle-amiens.fr/wp-content/themes/unilasalle-amiens/images/unilasalle_amiens_logo.svg" alt="Logo UniLaSalle Amiens" class="logo">
-        <!-- Titre de la page -->
-        <h1>Bienvenue sur le Serveur WEB Zone4</h1>
-        
-        <!-- Menu de navigation en haut avec les liens vers les différentes pages -->
+
+        <!-- Menu de navigation avec le bouton Contact ajouté -->
         <nav class="nav">
             <a href="index.html" class="nav-button">Accueil</a>
             <a href="https://www.unilasalle-amiens.fr/" class="nav-button">École</a>
             <a href="about.html" class="nav-button">À propos</a>
-            <a href="#" class="nav-button">Contact</a>
+            <a href="contact.html" class="nav-button">Contact</a>
         </nav>
     </header>
 
-    <!-- Bouton pour accéder au serveur NAS "Serveur WEB Zone4" -->
-    <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252F" target="_blank" class="main-button">Accéder au Serveur WEB Zone4</a>
-
     <div class="container">
-        <!-- Titre de la section des documents -->
-        <h2>Accédez aux Documents</h2>
-
-        <!-- Tableau contenant les liens vers les documents techniques -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Documents</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Lien vers les Documents Techniques -->
-                <tr>
-                    <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FDocuments%2520techniques%252F" target="_blank">Document Techniques</a></td>
-                </tr>
-                <!-- Lien vers le Programme API -->
-                <tr>
-                    <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FProgramme%2520API%252F" target="_blank">Programme API</a></td>
-                </tr>
-                <!-- Lien vers le Programme IHM -->
-                <tr>
-                    <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FProgramme%2520IHM%252F" target="_blank">Programme IHM</a></td>
-                </tr>
-                <!-- Lien vers les Schémas Électriques -->
-                <tr>
-                    <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Electriques%252F" target="_blank">Schéma Electriques</a></td>
-                </tr>
-                <!-- Lien vers les Schémas Mécaniques -->
-                <tr>
-                    <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520M%25C3%25A9caniques%252F" target="_blank">Schéma Mécaniques</a></td>
-                </tr>
-                <!-- Lien vers les Schémas Pneumatiques -->
-                <tr>
-                    <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Pneumatiques%252F" target="_blank">Schéma Pneumatiques</a></td>
-                </tr>
-            </tbody>
+        <!-- Titre principal -->
+        <h1>Bienvenue sur le serveur WEB Zone 4</h1>
+        
+        <!-- Bouton pour accéder au serveur NAS -->
+        <div style="text-align: center; margin: 50px 0;">
+            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252F" class="button">Accéder au Serveur WEB Zone 4</a>
+        </div>
+        
+        <!-- Tableau des documents -->
+        <table class="doc-table">
+            <tr>
+                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FDocuments%2520techniques%252F" class="table-button">Documents Techniques</a></td>
+                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FProgramme%2520API%252F" class="table-button">Programme API</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520Electriques%252F" class="table-button">Schéma Électriques</a></td>
+                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520M%C3%A9caniques%252F" class="table-button">Schéma Mécaniques</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%C3%A9e%252FGroupes%252FZ4%252FPlans%2520Pneumatiques%252F" class="table-button">Schéma Pneumatiques</a></td>
+                <td><a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%C3%A9e%252FGroupes%252FZ4%252FProgramme%2520IHM%252F" class="table-button">Programme IHM</a></td>
+            </tr>
         </table>
     </div>
 
     <!-- Zone pour les scripts éventuels -->
     <script>
-        // Tu peux ajouter des scripts ici si nécessaire
+        // Ajoutez des scripts ici si nécessaire
     </script>
 </body>
 </html>
