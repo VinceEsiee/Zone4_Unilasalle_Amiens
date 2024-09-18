@@ -68,7 +68,7 @@ h1 {
 .button {
     display: inline-block;
     padding: 15px 60px;
-    margin: 20px 0; /* Espace vertical de 20 pixels entre les boutons */
+    margin: 0; /* Suppression de l'espace entre les boutons */
     background-color: #f44336; /* Rouge */
     color: white;
     text-align: center;
@@ -78,6 +78,7 @@ h1 {
     width: 200px;
     transition: background-color 0.3s; /* Effet de transition */
 }
+
 
 
 .button:hover {
