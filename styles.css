@@ -67,7 +67,7 @@ h1 {
 /* Styles pour les boutons */
 .button {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 60px;
     margin: 10px 60; /* Espace vertical de 10 pixels entre les boutons */
     background-color: #f44336; /* Rouge */
     color: white;
