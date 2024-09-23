@@ -3,43 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Accueil - UniLaSalle Amiens</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que le chemin du CSS est correct -->
 </head>
-<body class="page-home">
+<body>
     <header>
-        <img src="https://www.unilasalle-amiens.fr/wp-content/themes/unilasalle-amiens/images/unilasalle_amiens_logo.svg" alt="Logo UniLaSalle Amiens" class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/fr/5/5e/Logo_Universit%C3%A9_UniLaSalle.svg" alt="Logo UniLaSalle" class="logo">
+        <h1>Bienvenue à UniLaSalle Amiens</h1>
         <nav class="nav">
             <a href="index.html" class="nav-button">Accueil</a>
             <a href="machine.html" class="nav-button">Machine</a>
-            <a href="https://www.unilasalle-amiens.fr/" class="nav-button">École</a>
-            <a href="about.html" class="nav-button">À propos</a>
-            <a href="contact.html" class="nav-button">Contact</a>
+            <!-- Ajoutez d'autres liens de navigation si nécessaire -->
         </nav>
     </header>
 
     <div class="container">
-        <h1>Bienvenue sur notre site !</h1>
-        
-        <div class="columns">
-            <!-- Colonne de gauche -->
-            <div class="column">
-                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FDocuments%2520techniques%252F" class="button mb-20">Documents Techniques</a>
-                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FProgramme%2520API%252F" class="button mb-20">Programme API</a>
-                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520Electriques%252F" class="button mb-20">Schéma Électriques</a>
-            </div>
-
-            <!-- Colonne de droite -->
-            <div class="column">
-                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520M%C3%A9caniques%252F" class="button mb-20">Schéma Mécaniques</a>
-                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FPlans%2520Pneumatiques%252F" class="button mb-20">Schéma Pneumatiques</a>
-                <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%C3%A9e%252FGroupes%252FZ4%252FProgramme%2520IHM%252F" class="button">Programme IHM</a>
-            </div>
+        <h2>Schémas Techniques</h2>
+        <p>Veuillez sélectionner le schéma technique souhaité :</p>
+        <div class="button-container">
+            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Pneumatiques%252F" class="button">Schéma Pneumatiques</a>
+            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520M%25C3%25A9caniques%252F" class="button">Schéma Mécaniques</a>
+            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Electriques%252F" class="button">Schéma Electriques</a>
         </div>
     </div>
 
-    <script>
-        // Ajoutez des scripts ici si nécessaire
-    </script>
+    <footer>
+        <p>&copy; 2024 UniLaSalle Amiens. Tous droits réservés.</p>
+        <a href="contact.html">Contact</a>
+    </footer>
 </body>
 </html>
