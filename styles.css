@@ -110,40 +110,35 @@ h3 {
     align-items: center;                    /* Centrer les éléments horizontalement */
 }
 
+/* Style pour le menu central */
+.central-menu {
+    display: flex;                          /* Utilisation de Flexbox pour la disposition */
+    justify-content: center;                /* Centrage horizontal des éléments */
+    gap: 40px;                              /* Espace entre les colonnes de boutons (augmenté) */
+    margin: 40px 0;                         /* Espace au-dessus et au-dessous du menu central (augmenté) */
+}
+
+/* Styles pour les sections gauche et droite du menu central */
+.menu-left, .menu-right {
+    display: flex;
+    flex-direction: column;                 /* Aligner les boutons verticalement */
+    align-items: center;                    /* Centrer les éléments horizontalement */
+}
+
 /* Style des boutons dans le menu central */
 .central-menu .nav-button {
     color: #fff;                            /* Couleur du texte des boutons */
     background-color: var(--primary-color); /* Couleur de fond des boutons */
-    padding: 10px 20px;                     /* Padding intérieur des boutons */
+    padding: 15px 30px;                     /* Padding intérieur des boutons (ajusté) */
     text-decoration: none;                  /* Suppression du soulignement des liens */
     border-radius: var(--button-radius);    /* Coins arrondis pour les boutons */
     transition: background-color var(--transition-speed), transform 0.2s; /* Transitions douces pour les effets */
     font-weight: 500;                       /* Poids de la police pour les boutons */
-    width: 200px;                           /* Largeur fixe pour les boutons */
+    width: 250px;                           /* Largeur fixe pour les boutons (ajusté) */
     text-align: center;                     /* Centrage du texte */
-    margin: 10px 0;                        /* Marges verticales */
+    margin: 20px 0;                        /* Marges verticales (ajustées) */
 }
 
-/* Effet au survol et au focus des boutons du menu central */
-.central-menu .nav-button:hover,
-.central-menu .nav-button:focus {
-    background-color: var(--primary-dark);  /* Changement de couleur au survol */
-    transform: translateY(-2px);             /* Légère élévation des boutons */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée pour l'effet d'élévation */
-    outline: none;                           /* Suppression de la bordure par défaut au focus */
-}
-
-/* Style pour la section principale */
-.container {
-    max-width: 1200px;                      /* Largeur maximale de la section principale */
-    margin: 40px auto;                      /* Centrage horizontal avec marges verticales */
-    padding: 30px;                           /* Padding intérieur pour espacer le contenu */
-    background-color: #fff;                  /* Couleur de fond blanche pour le contenu */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée pour effet de profondeur */
-    border-radius: 10px;                     /* Coins arrondis pour la section principale */
-    text-align: left;                        /* Alignement du texte à gauche pour une meilleure lisibilité */
-    animation: fadeIn 1s ease-in-out;        /* Animation d'apparition en fondu */
-}
 
 /* Animation de fondu pour la section principale */
 @keyframes fadeIn {
