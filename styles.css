@@ -172,3 +172,30 @@ h3 {
 .large-button:hover,
 .large-button:focus {
     background-color: var(--primary-dark);   /* Changement de couleur au survol */
+    transform: translateY(-2px);              /* Légère élévation des boutons */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);    /* Ombre portée pour l'effet d'élévation */
+    outline: none;                            /* Suppression de la bordure par défaut au focus */
+}
+
+/* Style pour le titre de la page de contact */
+.contact-title {
+    text-align: center;                      /* Centrage du titre */
+    font-weight: bold;                       /* Texte en gras */
+    margin-bottom: 20px;                    /* Espace en dessous du titre */
+}
+
+/* Media queries pour le responsive design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;              /* Orientation verticale pour les petits écrans */
+    }
+
+    .nav-button {
+        width: 100%;                         /* Largeur complète pour les boutons de navigation */
+        margin-bottom: 10px;                /* Espace en dessous des boutons */
+    }
+
+    .container {
+        margin: 20px;                       /* Ajustement des marges pour les petits écrans */
+    }
+}
