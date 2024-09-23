@@ -3,196 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Styles généraux */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Styles pour le header */
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Styles pour le logo */
-        .logo {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 20px; /* Espace entre le logo et la navigation */
-        }
-
-        /* Styles pour la navigation */
-        .nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px; /* Espace entre la navigation et le contenu */
-        }
-
-        .nav-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #e60000; /* Couleur rouge pour les boutons */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .nav-button:hover {
-            background-color: #cc0000; /* Couleur rouge foncé au survol */
-        }
-
-        /* Styles pour le contenu principal */
-        .container {
-            flex: 1;
-            max-width: 800px;
-            margin: 40px auto; /* Centre horizontalement avec un espace en haut et en bas */
-            background-color: white;
-            padding: 20px 40px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left; /* Alignement du texte à gauche pour la lisibilité */
-        }
-
-        /* Styles pour les titres */
-        h1, h2, h3 {
-            color: #e60000; /* Couleur rouge pour les titres */
-            text-align: center; /* Centre les titres */
-        }
-
-        /* Styles pour les listes */
-        ol, ul {
-            margin-left: 20px;
-        }
-
-        /* Styles pour les paragraphes */
-        p {
-            margin: 10px 0;
-            text-align: justify; /* Justifie le texte */
-        }
-
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            .nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-button {
-                width: 80%;
-                text-align: center;
-            }
-
-            .container {
-                padding: 20px;
-                margin: 20px;
-            }
-        }
-    </style>
+    <title>Machine - UniLaSalle Amiens</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que le chemin du CSS est correct -->
 </head>
 <body>
     <header>
-        <!-- Logo UniLaSalle en haut -->
-        <img src="https://www.unilasalle-amiens.fr/wp-content/themes/unilasalle-amiens/images/unilasalle_amiens_logo.svg" alt="Logo UniLaSalle Amiens" class="logo">
-
-        <!-- Menu de navigation en dessous de l'image -->
+        <img src="https://upload.wikimedia.org/wikipedia/fr/5/5e/Logo_Universit%C3%A9_UniLaSalle.svg" alt="Logo UniLaSalle" class="logo">
+        <h1>Présentation de la Machine</h1>
         <nav class="nav">
             <a href="index.html" class="nav-button">Accueil</a>
             <a href="machine.html" class="nav-button">Machine</a>
-            <a href="https://www.unilasalle-amiens.fr/" class="nav-button">École</a>
-            <a href="about.html" class="nav-button">À propos</a>
-            <a href="contact.html" class="nav-button">Contact</a>
+            <!-- Ajoutez d'autres liens de navigation si nécessaire -->
         </nav>
     </header>
 
     <div class="container">
-        <!-- Titre de la page Machine -->
-        <h1>Fonctionnement de la Machine</h1>
-
-        <!-- Description du processus -->
+        <h2 class="machine-title">Fonctionnement de la Machine</h2>
         <p>
-            Cette section de l'usine est dédiée au chauffage des popcorns à l'aide d'un convoyeur. 
-            Le cycle de fonctionnement débute par l'activation du convoyeur de transfert, qui se met en marche avec un minuteur. 
-            Ensuite, deux ventilateurs sont activés pour assurer la circulation de l'air. 
-            Après cela, une lampe s'allume pendant une durée déterminée. 
-            Les ventilateurs et la lampe s'éteignent à la fin du processus. 
-            Enfin, le convoyeur de fin de transfert se met en route pour une durée spécifiée afin de compléter le cycle. 
-            Le cycle se termine lorsque l'on appuie sur le bouton "Arrêt cycle".
+            Cette partie de l'usine consiste à faire chauffer les popcorns sur un convoyeur. 
+            Le début du cycle de fonctionnement consiste à faire un départ cycle, 
+            le convoyeur de transfert se met en route avec un timer. 
+            Par la suite, deux ventilateurs s'activent. 
+            La suite du processus consiste à allumer une lampe pendant X secondes. 
+            Ensuite, le sécheur se met en marche et pour finir, les ventilateurs se coupent ainsi que la lampe et le sécheur. 
+            Le convoyeur de fin de transfert se met en marche pendant X secondes. 
+            Pour terminer le cycle de fonctionnement, il faut appuyer sur arrêt cycle.
         </p>
 
-        <!-- Mode opératoire -->
-        <h2>Mode Opératoire : Fonctionnement de la Mini Usine de Popcorn</h2>
-        
-        <h3>1. Processus en Mode Automatique</h3>
-        <ol>
-            <li>
-                <strong>Démarrage du cycle :</strong>
-                <ol>
-                    <li>Activer le <strong>convoyeur de séchage</strong>.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Circulation de l'air :</strong>
-                <ol>
-                    <li>Une fois le convoyeur en marche, activer les <strong>deux ventilateurs</strong> pour assurer une bonne circulation de l’air autour des popcorns.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Chauffage :</strong>
-                <ol>
-                    <li>Allumer la <strong>lampe</strong> pour une durée déterminée afin de chauffer les popcorns.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Fin du processus :</strong>
-                <ol>
-                    <li>À la fin du cycle, éteindre les <strong>ventilateurs</strong> et la <strong>lampe</strong>.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Transfert des popcorns :</strong>
-                <ol>
-                    <li>Activer le <strong>convoyeur de fin de transfert</strong> vers la zone 5 pour une durée spécifiée afin d’extraire les popcorns vers la suite de la chaîne.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Arrêt du cycle :</strong>
-                <ol>
-                    <li>Terminer le cycle en appuyant sur le bouton <strong>"Arrêt cycle"</strong>.</li>
-                </ol>
-            </li>
-        </ol>
-
-        <h3>2. Processus en Mode Manuel</h3>
-        <ul>
-            <li>Allumer le <strong>convoyeur de séchage</strong>.</li>
-            <li>Allumer le <strong>convoyeur de transfert</strong> vers la zone 5.</li>
-            <li>Allumer les <strong>ventilateurs 1 et 2</strong>.</li>
-            <li>Allumer la <strong>lampe</strong>.</li>
-            <li>Éteindre tous les <strong>actionneurs</strong>.</li>
-        </ul>
-
-        <h3>3. Gestion des Défaillances</h3>
-        <p>En cas de <strong>défaut</strong> :</p>
-        <ul>
-            <li>Appuyer sur <strong>"Acquit Défaut"</strong>.</li>
-        </ul>
+        <!-- Ajout de l'image en bas de la page -->
+        <div class="machine-image-container">
+            <img src="https://github.com/VinceEsiee/Zone4_Unilasalle_Amiens/blob/main/ZONE%204%20pr%C3%A9sentation.png?raw=true" alt="Présentation de la machine" class="machine-image">
+        </div>
     </div>
-    <!-- Section pour l'image de présentation de la machine -->
-<div class="machine-image-container" style="text-align: center; margin-top: 40px;">
-    <img src="https://raw.githubusercontent.com/VinceEsiee/Zone4_Unilasalle_Amiens/main/ZONE%204%20pr%C3%A9sentation.png" alt="Présentation de la machine" class="machine-image">
-</div>
 
+    <footer>
+        <p>&copy; 2024 UniLaSalle Amiens. Tous droits réservés.</p>
+        <a href="contact.html">Contact</a>
+    </footer>
 </body>
 </html>
