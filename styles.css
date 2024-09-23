@@ -127,12 +127,17 @@ h3 {
 }
 
 /* Style pour les images (exemple : image de la machine) */
+.machine-image-container {
+    text-align: center;                     /* Centrage de l'image */
+    margin-top: 40px;                       /* Espace au-dessus de l'image */
+}
+
 .machine-image {
     max-width: 100%;                         /* Image responsive */
     height: auto;                            /* Hauteur automatique pour conserver les proportions */
     display: block;                          /* Affichage en bloc */
-    margin: 0 auto 20px auto;                /* Centrage horizontal et espace en dessous */
-    border-radius: 10px;                     /* Coins arrondis pour les images */
+    margin: 0 auto 20px;                    /* Centrage horizontal et espace en dessous */
+    border-radius: 10px;                     /* Coins arrondis pour l'image */
 }
 
 /* Styles pour les boutons généraux */
@@ -177,25 +182,28 @@ h3 {
     outline: none;                            /* Suppression de la bordure par défaut au focus */
 }
 
-/* Style pour le titre de la page de contact */
-.contact-title {
-    text-align: center;                      /* Centrage du titre */
-    font-weight: bold;                       /* Texte en gras */
+/* Style pour le titre de la machine */
+.machine-title {
+    font-size: 2rem;                         /* Taille de police pour le titre de la machine */
     margin-bottom: 20px;                    /* Espace en dessous du titre */
 }
 
-/* Media queries pour le responsive design */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;              /* Orientation verticale pour les petits écrans */
-    }
+/* Styles pour le footer */
+footer {
+    text-align: center;                      /* Centrage du texte dans le footer */
+    padding: 20px;                          /* Padding intérieur du footer */
+    background-color: var(--header-bg);     /* Couleur de fond du footer */
+    color: var(--text-color);               /* Couleur du texte du footer */
+    position: relative;                      /* Position relative pour un positionnement contrôlé */
+}
 
-    .nav-button {
-        width: 100%;                         /* Largeur complète pour les boutons de navigation */
-        margin-bottom: 10px;                /* Espace en dessous des boutons */
-    }
+/* Style pour les liens du footer */
+footer a {
+    color: var(--primary-color);             /* Couleur des liens dans le footer */
+    text-decoration: none;                    /* Suppression du soulignement des liens */
+}
 
-    .container {
-        margin: 20px;                       /* Ajustement des marges pour les petits écrans */
-    }
+/* Effet au survol des liens du footer */
+footer a:hover {
+    text-decoration: underline;               /* Soulignement des liens au survol */
 }
