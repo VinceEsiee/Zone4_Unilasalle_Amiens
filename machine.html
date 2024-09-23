@@ -11,6 +11,9 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         /* Styles pour le header */
@@ -21,14 +24,24 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        /* Styles pour le logo */
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px; /* Espace entre le logo et la navigation */
+        }
+
         /* Styles pour la navigation */
         .nav {
-            margin-bottom: 20px; /* Espace entre les boutons et l'image */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px; /* Espace entre la navigation et le contenu */
         }
 
         .nav-button {
             display: inline-block;
-            margin: 0 10px;
             padding: 10px 20px;
             background-color: #e60000; /* Couleur rouge pour les boutons */
             color: white;
@@ -41,14 +54,9 @@
             background-color: #cc0000; /* Couleur rouge foncé au survol */
         }
 
-        /* Styles pour le logo */
-        .logo {
-            max-width: 200px;
-            height: auto;
-        }
-
         /* Styles pour le contenu principal */
         .container {
+            flex: 1;
             max-width: 800px;
             margin: 40px auto; /* Centre horizontalement avec un espace en haut et en bas */
             background-color: white;
@@ -71,24 +79,34 @@
         /* Styles pour les paragraphes */
         p {
             margin: 10px 0;
+            text-align: justify; /* Justifie le texte */
         }
 
         /* Responsive Design */
         @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .nav-button {
-                display: block;
-                margin: 10px 0;
+                width: 80%;
+                text-align: center;
             }
 
             .container {
                 padding: 20px;
+                margin: 20px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Menu de navigation -->
+        <!-- Logo UniLaSalle en haut -->
+        <img src="https://www.unilasalle-amiens.fr/wp-content/themes/unilasalle-amiens/images/unilasalle_amiens_logo.svg" alt="Logo UniLaSalle Amiens" class="logo">
+
+        <!-- Menu de navigation en dessous de l'image -->
         <nav class="nav">
             <a href="index.html" class="nav-button">Accueil</a>
             <a href="machine.html" class="nav-button">Machine</a>
@@ -96,9 +114,6 @@
             <a href="about.html" class="nav-button">À propos</a>
             <a href="contact.html" class="nav-button">Contact</a>
         </nav>
-
-        <!-- Logo UniLaSalle au centre -->
-        <img src="https://www.unilasalle-amiens.fr/wp-content/themes/unilasalle-amiens/images/unilasalle_amiens_logo.svg" alt="Logo UniLaSalle Amiens" class="logo">
     </header>
 
     <div class="container">
