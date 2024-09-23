@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - UniLaSalle Amiens</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que le chemin du CSS est correct -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/fr/5/5e/Logo_Universit%C3%A9_UniLaSalle.svg" alt="Logo UniLaSalle" class="logo">
+        <img src="https://github.com/VinceEsiee/Zone4_Unilasalle_Amiens/blob/main/Unilasalle_amiens_logo.svg.png" alt="Logo UniLaSalle Amiens" class="banner-logo">
         <h1>Bienvenue à UniLaSalle Amiens</h1>
+        <!-- Menu de navigation -->
         <nav class="nav">
             <a href="index.html" class="nav-button">Accueil</a>
-            <a href="apropos.html" class="nav-button">À propos</a>
+            <a href="machine.html" class="nav-button">Machine</a>
+            <a href="https://www.unilasalle-amiens.fr/" class="nav-button">École</a>
+            <a href="a_propos.html" class="nav-button">À propos</a>
             <a href="contact.html" class="nav-button">Contact</a>
-            <a href="https://www.unilasalle-amiens.fr/" class="nav-button" target="_blank">Site de l'École</a>
         </nav>
     </header>
 
     <div class="container">
-        <h2>Accès au Serveur NAS</h2>
-        <nav class="nav">
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Pneumatiques%252F" class="nav-button" target="_blank">Schéma Pneumatiques</a>
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520M%25C3%25A9caniques%252F" class="nav-button" target="_blank">Schéma Mécaniques</a>
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Electriques%252F" class="nav-button" target="_blank">Schéma Électriques</a>
-        </nav>
+        <h2>Menu Principal</h2>
+        <div class="button-container">
+            <a href="machine.html" class="button">Page Machine</a>
+            <a href="a_propos.html" class="button">À Propos</a>
+            <a href="contact.html" class="button">Contact</a>
+            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Pneumatiques%252F" class="button">Schéma Pneumatiques</a>
+            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520M%25C3%25A9caniques%252F" class="button">Schéma Mécaniques</a>
+            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Electriques%252F" class="button">Schéma Electriques</a>
+        </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 UniLaSalle Amiens. Tous droits réservés.</p>
-    </footer>
 </body>
 </html>
