@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machine</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles pour centrer le contenu */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centre le texte à l'intérieur */
+        }
+        h1, h2, h3 {
+            color: #e60000; /* Couleur rouge pour les titres */
+        }
+        ol, ul, p {
+            text-align: left; /* Pour que le contenu soit lisible mais centré globalement */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,76 +50,37 @@
         <!-- Titre de la page Machine -->
         <h1>Fonctionnement de la Machine</h1>
 
-        <!-- Description du processus -->
-        <p>
-            Cette section de l'usine est dédiée au chauffage des popcorns à l'aide d'un convoyeur. 
-            Le cycle de fonctionnement débute par l'activation du convoyeur de séchage. 
-            Ensuite, deux ventilateurs sont activés pour assurer la circulation de l'air. 
-            Après cela, une lampe s'allume pendant une durée déterminée. 
-            Les ventilateurs et la lampe s'éteignent à la fin du processus. 
-            Enfin, le convoyeur de fin de transfert se met en route pour une durée spécifiée afin de compléter le cycle. 
-            Le cycle se termine lorsque l'on appuie sur le bouton "Arrêt cycle".
-        </p>
-
         <!-- Mode opératoire -->
         <h2>Mode Opératoire : Fonctionnement de la Mini Usine de Popcorn</h2>
         
         <h3>1. Processus en Mode Automatique</h3>
-        <ol>
-            <li>
-                <strong>Démarrage du cycle :</strong>
-                <ol>
-                    <li>Activer le <strong>convoyeur de séchage</strong>.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Circulation de l'air :</strong>
-                <ol>
-                    <li>Une fois le convoyeur en marche, activer les <strong>deux ventilateurs</strong> pour assurer une bonne circulation de l’air autour des popcorns.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Chauffage :</strong>
-                <ol>
-                    <li>Allumer la <strong>lampe</strong> pour une durée déterminée afin de chauffer les popcorns.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Fin du processus :</strong>
-                <ol>
-                    <li>À la fin du cycle, éteindre les <strong>ventilateurs</strong> et la <strong>lampe</strong>.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Transfert des popcorns :</strong>
-                <ol>
-                    <li>Activer le <strong>convoyeur de fin de transfert</strong> vers la zone 5 pour une durée spécifiée afin d’extraire les popcorns vers la suite de la chaîne.</li>
-                </ol>
-            </li>
-            <li>
-                <strong>Arrêt du cycle :</strong>
-                <ol>
-                    <li>Terminer le cycle en appuyant sur le bouton <strong>"Arrêt cycle"</strong>.</li>
-                </ol>
-            </li>
-        </ol>
+        <p>Démarrage du cycle :</p>
+        <p>Activer le convoyeur de séchage.</p>
+        <p>Circulation de l'air :</p>
+        <p>Une fois le convoyeur en marche, activer les deux ventilateurs pour assurer une bonne circulation de l’air autour des popcorns.</p>
+        <p>Chauffage :</p>
+        <p>Allumer la lampe pour une durée déterminée afin de chauffer les popcorns.</p>
+        <p>Fin du processus :</p>
+        <p>À la fin du cycle, éteindre les ventilateurs et la lampe.</p>
+        <p>Transfert des popcorns :</p>
+        <p>Activer le convoyeur de fin de transfert vers la zone 5 pour une durée spécifiée afin d’extraire les popcorns vers la suite de la chaîne.</p>
+        <p>Arrêt du cycle :</p>
+        <p>Terminer le cycle en appuyant sur le bouton "Arrêt cycle".</p>
 
         <h3>2. Processus en Mode Manuel</h3>
         <ul>
-            <li>Allumer le <strong>convoyeur de séchage</strong>.</li>
-            <li>Allumer le <strong>convoyeur de transfert</strong> vers la zone 5.</li>
-            <li>Allumer les <strong>ventilateurs 1 et 2</strong>.</li>
-            <li>Allumer la <strong>lampe</strong>.</li>
-            <li>Éteindre tous les <strong>actionneurs</strong>.</li>
+            <li>Allumer le convoyeur de séchage.</li>
+            <li>Allumer le convoyeur de transfert vers la zone 5.</li>
+            <li>Allumer les ventilateurs 1 et 2.</li>
+            <li>Allumer la lampe.</li>
+            <li>Éteindre tous les actionneurs.</li>
         </ul>
 
         <h3>3. Gestion des Défaillances</h3>
-        <p>
-            En cas de <strong>défaut</strong> :
-            <ul>
-                <li>Appuyer sur <strong>"Acquit Défaut"</strong>.</li>
-            </ul>
-        </p>
+        <p>En cas de défaut :</p>
+        <ul>
+            <li>Appuyer sur "Acquit Défaut".</li>
+        </ul>
     </div>
 </body>
 </html>
