@@ -5,6 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles généraux */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Styles pour le header */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles pour le logo */
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px; /* Espace entre le logo et la navigation */
+        }
+
+        /* Styles pour la navigation */
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px; /* Espace entre la navigation et le contenu */
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e60000; /* Couleur rouge pour les boutons */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #cc0000; /* Couleur rouge foncé au survol */
+        }
+
+        /* Styles pour le contenu principal */
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: 40px auto; /* Centre horizontalement avec un espace en haut et en bas */
+            background-color: white;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Alignement du texte à gauche pour la lisibilité */
+        }
+
+        /* Styles pour les titres */
+        h1, h2, h3 {
+            color: #e60000; /* Couleur rouge pour les titres */
+            text-align: center; /* Centre les titres */
+        }
+
+        /* Styles pour les paragraphes */
+        p {
+            margin: 10px 0;
+            text-align: justify; /* Justifie le texte */
+        }
+
+        /* Styles pour les informations de contact */
+        .contact-info {
+            margin-top: 20px; /* Espace au-dessus des informations */
+            text-align: left; /* Aligne le texte à gauche pour plus de lisibilité */
+        }
+
+        .contact-title {
+            font-size: 2em; /* Taille du titre */
+            margin-bottom: 20px; /* Espace en dessous du titre */
+        }
+    </style>
 </head>
 <body class="page-contact">
     <header>
