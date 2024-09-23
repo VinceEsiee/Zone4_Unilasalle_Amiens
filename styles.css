@@ -1,107 +1,160 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - UniLaSalle Amiens</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .banner {
-            background-color: #e63946; /* Couleur de la bannière rouge */
-            padding: 10px; /* Espacement autour de la bannière */
-            display: flex;
-            align-items: center; /* Aligne le logo et le texte verticalement */
-        }
-        .banner-logo {
-            width: 100px; /* Taille du logo */
-            margin-right: 20px; /* Espacement entre le logo et le titre */
-        }
-        .nav {
-            background-color: #ffffff; /* Fond du menu de navigation */
-            padding: 10px 0; /* Espacement vertical pour le menu */
-            display: flex;
-            justify-content: center; /* Centre les éléments du menu */
-        }
-        .nav-button {
-            margin: 0 15px; /* Espacement entre les boutons du menu */
-            color: #e63946; /* Couleur des liens */
-            text-decoration: none; /* Supprime le soulignement des liens */
-            font-weight: bold; /* Met le texte en gras */
-        }
-        .nav-button:hover {
-            text-decoration: underline; /* Souligne le lien au survol */
-        }
-        .container {
-            padding: 20px; /* Espacement autour du contenu principal */
-            text-align: center; /* Centre le texte dans le conteneur */
-        }
-        .central-menu {
-            display: flex; /* Utilise flexbox pour le menu central */
-            justify-content: center; /* Centre le menu central */
-            flex-wrap: wrap; /* Permet au menu de passer à la ligne si nécessaire */
-        }
-        .menu-left, .menu-right {
-            display: flex;
-            flex-direction: column; /* Aligne les éléments en colonne */
-            margin: 10px; /* Espacement autour des colonnes de menu */
-        }
-        .nav-button {
-            padding: 10px; /* Espacement interne pour les boutons */
-            background-color: #e63946; /* Couleur de fond des boutons */
-            color: white; /* Couleur du texte des boutons */
-            border: none; /* Supprime la bordure */
-            border-radius: 5px; /* Coins arrondis */
-            margin: 5px 0; /* Espacement vertical entre les boutons */
-            text-align: center; /* Centre le texte dans les boutons */
-            text-decoration: none; /* Supprime le soulignement des liens */
-        }
-        .nav-button:hover {
-            background-color: #d62839; /* Couleur du bouton au survol */
-        }
-    </style>
-</head>
-<body class="page-index">
+/* Importation de Google Fonts pour une typographie moderne */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-<header class="banner">
-    <!-- Logo UniLaSalle en bannière -->
-    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/b/b5/Unilasalle_amiens_logo.svg/2560px-Unilasalle_amiens_logo.svg.png" alt="Logo UniLaSalle Amiens" class="banner-logo">
-    <h1>Bienvenue sur le site de la Mini Usine de Popcorn</h1>
-</header>
+/* Variables CSS pour une gestion facile des couleurs et des styles récurrents */
+:root {
+    /* Couleurs principales */
+    --primary-color: #e63946;      /* Rouge vif pour les titres et boutons principaux */
+    --primary-dark: #d62839;       /* Rouge foncé pour les états de survol */
+    --secondary-color: #f44336;    /* Rouge pour les boutons secondaires */
+    
+    /* Couleurs de fond et de texte */
+    --background-color: #f9f9f9;   /* Couleur de fond générale */
+    --header-bg: #ffffff;          /* Couleur de fond du header */
+    --text-color: #333333;         /* Couleur principale du texte */
+    
+    /* Autres variables */
+    --header-shadow: rgba(0, 0, 0, 0.1); /* Ombre portée pour le header */
+    --button-radius: 5px;                  /* Rayon des coins des boutons */
+    --large-button-radius: 25px;           /* Rayon des coins des grands boutons */
+    --font-family: 'Roboto', sans-serif;   /* Police de caractères principale */
+    --transition-speed: 0.3s;              /* Vitesse des transitions */
+}
 
-<!-- Menu de navigation -->
-<nav class="nav">
-    <a href="index.html" class="nav-button">Accueil</a>
-    <a href="machine.html" class="nav-button">Machine</a> <!-- Bouton Machine -->
-    <a href="a_propos.html" class="nav-button">À propos</a>
-    <a href="contact.html" class="nav-button">Contact</a>
-    <a href="https://www.unilasalle-amiens.fr/" class="nav-button">École</a>
-</nav>
+/* Styles de base pour tout le site */
+body {
+    font-family: var(--font-family);      /* Application de la police Roboto */
+    margin: 0;                             /* Suppression des marges par défaut */
+    padding: 0;                            /* Suppression des paddings par défaut */
+    background-color: var(--background-color); /* Couleur de fond générale */
+    color: var(--text-color);             /* Couleur principale du texte */
+    line-height: 1.6;                      /* Hauteur de ligne pour une meilleure lisibilité */
+}
 
-<div class="container">
-    <h1>Bienvenue sur le site de la Mini Usine de Popcorn</h1>
+/* Styles pour le header */
+header {
+    text-align: center;                    /* Centrage du contenu dans le header */
+    background-color: var(--header-bg);    /* Couleur de fond du header */
+    padding: 20px 0;                       /* Padding vertical pour espacer le contenu */
+    box-shadow: 0 2px 4px var(--header-shadow); /* Ombre portée légère pour effet de profondeur */
+}
 
-    <!-- Menu central avec 6 boutons -->
-    <div class="central-menu">
-        <div class="menu-left">
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FDocuments%2520techniques%252F" class="nav-button">Documents Techniques</a>
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FProgramme%2520API%252F" class="nav-button">Programme API</a>
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FProgramme%2520IHM%252F" class="nav-button">Programme IHM</a>
-        </div>
-        <div class="menu-right">
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Electriques%252F" class="nav-button">Schéma Electriques</a>
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520M%25C3%25A9caniques%252F" class="nav-button">Schéma Mécaniques</a>
-            <a href="https://172.16.0.230:60443/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252FI5PAUC_FISE_PRO_2024_2025%252FModule_Usine_Connect%25C3%25A9e%252FGroupes%252FZ4%252FSch%25C3%25A9ma%2520Pneumatiques%252F" class="nav-button">Schéma Pneumatiques</a>
-        </div>
-    </div>
-</div>
+/* Style pour le logo UniLaSalle */
+.logo {
+    width: 200px;                          /* Largeur fixe pour le logo */
+    height: auto;                          /* Hauteur automatique pour conserver les proportions */
+    margin-bottom: 20px;                   /* Espace en dessous du logo */
+}
 
-<!-- Zone pour les scripts éventuels -->
-<script>
-    // Ajoutez des scripts ici si nécessaire
-</script>
-</body>
-</html>
+/* Styles pour les titres */
+h1, h2, h3 {
+    color: var(--primary-color);           /* Couleur rouge vif pour les titres */
+}
+
+h1 {
+    font-size: 2.5rem;                     /* Taille de police pour le titre principal */
+    margin-bottom: 20px;                   /* Espace en dessous du titre */
+}
+
+h2 {
+    font-size: 2rem;                       /* Taille de police pour les sous-titres */
+    margin-bottom: 15px;                   /* Espace en dessous des sous-titres */
+}
+
+h3 {
+    font-size: 1.5rem;                     /* Taille de police pour les sous-sous-titres */
+    margin-bottom: 10px;                   /* Espace en dessous des sous-sous-titres */
+}
+
+/* Style pour le menu de navigation */
+.nav {
+    display: flex;                          /* Utilisation de Flexbox pour la disposition */
+    justify-content: center;                /* Centrage horizontal des éléments */
+    gap: 40px;                              /* Espace entre les boutons de navigation */
+    flex-wrap: wrap;                        /* Permet aux boutons de passer à la ligne sur les petits écrans */
+    margin-bottom: 20px;                    /* Espace en dessous du menu de navigation */
+}
+
+/* Styles des boutons de navigation */
+.nav-button,
+.button,
+.large-button {
+    color: #fff;                            /* Couleur du texte des boutons */
+    background-color: var(--primary-color); /* Couleur de fond des boutons */
+    padding: 15px 30px;                     /* Padding intérieur des boutons */
+    text-decoration: none;                  /* Suppression du soulignement des liens */
+    border-radius: var(--button-radius);    /* Coins arrondis pour les boutons */
+    transition: background-color var(--transition-speed), transform 0.2s; /* Transitions douces pour les effets */
+    font-weight: 500;                       /* Poids de la police pour les boutons */
+    width: 250px;                           /* Largeur fixe pour les boutons */
+    text-align: center;                     /* Centrage du texte */
+    margin: 20px 0;                        /* Marges verticales */
+}
+
+/* Effet au survol et au focus des boutons de navigation */
+.nav-button:hover,
+.nav-button:focus,
+.button:hover,
+.large-button:hover {
+    background-color: var(--primary-dark);  /* Changement de couleur au survol */
+    transform: translateY(-2px);             /* Légère élévation des boutons */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);   /* Ombre portée pour l'effet d'élévation */
+    outline: none;                           /* Suppression de la bordure par défaut au focus */
+}
+
+/* Style pour le menu central */
+.central-menu {
+    display: flex;                          /* Utilisation de Flexbox pour la disposition */
+    justify-content: center;                /* Centrage horizontal des éléments */
+    gap: 40px;                              /* Espace entre les colonnes de boutons */
+    margin: 40px 0;                         /* Espace au-dessus et au-dessous du menu central */
+}
+
+/* Styles pour les sections gauche et droite du menu central */
+.menu-left, .menu-right {
+    display: flex;
+    flex-direction: column;                 /* Aligner les boutons verticalement */
+    align-items: center;                    /* Centrer les éléments horizontalement */
+}
+
+/* Animation de fondu pour la section principale */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Style pour les paragraphes dans la section principale */
+.container p {
+    text-align: justify;                     /* Justification du texte pour une apparence soignée */
+    margin-bottom: 1em;                      /* Espace en dessous des paragraphes */
+}
+
+/* Style pour les listes dans la section principale */
+.container ul,
+.container ol {
+    padding-left: 20px;                      /* Indentation des listes */
+    margin-bottom: 1em;                      /* Espace en dessous des listes */
+}
+
+/* Style pour les images (exemple : image de la machine) */
+.machine-image-container {
+    text-align: center;                     /* Centrage de l'image */
+    margin-top: 40px;                       /* Espace au-dessus de l'image */
+}
+
+.machine-image {
+    max-width: 100%;                         /* Image responsive */
+    height: auto;                            /* Hauteur automatique pour conserver les proportions */
+    display: block;                          /* Affichage en bloc */
+    margin: 0 auto 20px;                    /* Centrage horizontal et espace en dessous */
+    border-radius: 10px;                     /* Coins arrondis pour l'image */
+}
+
+/* Styles pour le footer */
+footer {
+    text-align: center;                    /* Centrage du contenu dans le footer */
+    padding: 20px 0;                      /* Padding vertical pour espacer le contenu */
+    background-color: var(--header-bg);    /* Couleur de fond du footer */
+    box-shadow: 0 -2px 4px var(--header-shadow); /* Ombre portée légère pour effet de profondeur */
+    margin-top: 40px;                      /* Espace au-dessus du footer */
+}
