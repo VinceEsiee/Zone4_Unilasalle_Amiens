@@ -95,6 +95,44 @@ h3 {
     outline: none;                           /* Suppression de la bordure par défaut au focus */
 }
 
+/* Style pour le menu central */
+.central-menu {
+    display: flex;                          /* Utilisation de Flexbox pour la disposition */
+    justify-content: center;                /* Centrage horizontal des éléments */
+    gap: 20px;                              /* Espace entre les colonnes de boutons */
+    margin: 20px 0;                         /* Espace au-dessus et au-dessous du menu central */
+}
+
+/* Styles pour les sections gauche et droite du menu central */
+.menu-left, .menu-right {
+    display: flex;
+    flex-direction: column;                 /* Aligner les boutons verticalement */
+    align-items: center;                    /* Centrer les éléments horizontalement */
+}
+
+/* Style des boutons dans le menu central */
+.central-menu .nav-button {
+    color: #fff;                            /* Couleur du texte des boutons */
+    background-color: var(--primary-color); /* Couleur de fond des boutons */
+    padding: 10px 20px;                     /* Padding intérieur des boutons */
+    text-decoration: none;                  /* Suppression du soulignement des liens */
+    border-radius: var(--button-radius);    /* Coins arrondis pour les boutons */
+    transition: background-color var(--transition-speed), transform 0.2s; /* Transitions douces pour les effets */
+    font-weight: 500;                       /* Poids de la police pour les boutons */
+    width: 200px;                           /* Largeur fixe pour les boutons */
+    text-align: center;                     /* Centrage du texte */
+    margin: 10px 0;                        /* Marges verticales */
+}
+
+/* Effet au survol et au focus des boutons du menu central */
+.central-menu .nav-button:hover,
+.central-menu .nav-button:focus {
+    background-color: var(--primary-dark);  /* Changement de couleur au survol */
+    transform: translateY(-2px);             /* Légère élévation des boutons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée pour l'effet d'élévation */
+    outline: none;                           /* Suppression de la bordure par défaut au focus */
+}
+
 /* Style pour la section principale */
 .container {
     max-width: 1200px;                      /* Largeur maximale de la section principale */
@@ -144,66 +182,26 @@ h3 {
 .button,
 .large-button {
     display: inline-block;                   /* Affichage en ligne avec bloc */
-    background-color: var(--secondary-color);/* Couleur de fond des boutons */
+    background-color: var(--secondary-color); /* Couleur de fond pour les boutons */
     color: #fff;                             /* Couleur du texte des boutons */
-    text-align: center;                      /* Centrage du texte à l'intérieur */
+    padding: 15px 30px;                     /* Padding intérieur des boutons */
     text-decoration: none;                   /* Suppression du soulignement des liens */
-    border-radius: var(--large-button-radius);/* Coins arrondis pour les boutons */
-    transition: background-color var(--transition-speed), transform 0.2s; /* Transitions douces pour les effets */
-    font-weight: 500;                        /* Poids de la police pour les boutons */
+    border-radius: var(--large-button-radius); /* Coins arrondis pour les grands boutons */
+    transition: background-color var(--transition-speed); /* Transition pour l'effet de survol */
+    font-size: 1.2rem;                      /* Taille de la police pour les grands boutons */
 }
 
-/* Style spécifique pour les petits boutons */
-.button {
-    padding: 15px 60px;                      /* Padding intérieur des petits boutons */
-    margin: 10px 0;                          /* Marges verticales */
-    font-size: 18px;                         /* Taille de la police des petits boutons */
-    width: 200px;                            /* Largeur fixe pour les petits boutons */
-}
-
-/* Style spécifique pour les grands boutons */
-.large-button {
-    display: block;                          /* Affichage en bloc pour les grands boutons */
-    width: 100%;                             /* Largeur complète */
-    max-width: 800px;                        /* Largeur maximale ajustable */
-    padding: 20px 0;                         /* Padding intérieur pour les grands boutons */
-    margin: 20px auto;                       /* Centrage horizontal avec marges verticales */
-    font-size: 24px;                         /* Taille de la police des grands boutons */
-}
-
-/* Effet au survol et au focus des boutons généraux */
+/* Effet au survol des boutons généraux */
 .button:hover,
-.button:focus,
-.large-button:hover,
-.large-button:focus {
-    background-color: var(--primary-dark);   /* Changement de couleur au survol */
-    transform: translateY(-2px);              /* Légère élévation des boutons */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);    /* Ombre portée pour l'effet d'élévation */
-    outline: none;                            /* Suppression de la bordure par défaut au focus */
-}
-
-/* Style pour le titre de la machine */
-.machine-title {
-    font-size: 2rem;                         /* Taille de police pour le titre de la machine */
-    margin-bottom: 20px;                    /* Espace en dessous du titre */
+.large-button:hover {
+    background-color: var(--primary-color);  /* Changement de couleur au survol */
 }
 
 /* Styles pour le footer */
 footer {
-    text-align: center;                      /* Centrage du texte dans le footer */
-    padding: 20px;                          /* Padding intérieur du footer */
-    background-color: var(--header-bg);     /* Couleur de fond du footer */
-    color: var(--text-color);               /* Couleur du texte du footer */
-    position: relative;                      /* Position relative pour un positionnement contrôlé */
-}
-
-/* Style pour les liens du footer */
-footer a {
-    color: var(--primary-color);             /* Couleur des liens dans le footer */
-    text-decoration: none;                    /* Suppression du soulignement des liens */
-}
-
-/* Effet au survol des liens du footer */
-footer a:hover {
-    text-decoration: underline;               /* Soulignement des liens au survol */
+    text-align: center;                    /* Centrage du contenu dans le footer */
+    padding: 20px 0;                      /* Padding vertical pour espacer le contenu */
+    background-color: var(--header-bg);    /* Couleur de fond du footer */
+    box-shadow: 0 -2px 4px var(--header-shadow); /* Ombre portée légère pour effet de profondeur */
+    margin-top: 40px;                      /* Espace au-dessus du footer */
 }
